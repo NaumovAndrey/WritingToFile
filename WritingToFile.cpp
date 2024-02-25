@@ -8,7 +8,7 @@ void task1();
 void task2();
 void task3();
 void task4();
-void task5();
+
 
 int main()
 {
@@ -18,15 +18,14 @@ int main()
     while (true)
     {
         std::cout << "0: lesson" << std::endl;
-        std::cout << "1: " << std::endl;
-        std::cout << "2: " << std::endl;
-        std::cout << "3: " << std::endl;
-        std::cout << "4: " << std::endl;
-        std::cout << "5: " << std::endl;
-        std::cout << "Введите число от 0 до 5 или что-то другое для выхода: ";
+        std::cout << "1: Реализовать запись в ведомость учёта" << std::endl;
+        std::cout << "2: Реализовать рисование случайных картин" << std::endl;
+        std::cout << "3: Реализовать симуляцию игры «Рыбалка»." << std::endl;
+        std::cout << "4: Реализовать симуляцию работы банкомата." << std::endl;
+        std::cout << "Введите число от 0 до 4 или что-то другое для выхода: ";
 
-        int task = 0;
-        //std::cin >> task;
+        int task;
+        std::cin >> task;
 
         if (task == 0)
         {
@@ -40,39 +39,32 @@ int main()
         else if (task == 1)
         {
             system("cls");
-            std::cout << "Задача 1 " << std::endl;
+            std::cout << "Задача 1 Реализовать запись в ведомость учёта" << std::endl;
             task1();
             _getch();
             system("cls");;
         } else if (task == 2)
         {
             system("cls");
-            std::cout << "Задача 2 " << std::endl;
+            std::cout << "Задача 2 Реализовать рисование случайных картин" << std::endl;
             task2();
             _getch();
             system("cls");;
         } else if (task == 3)
         {
             system("cls");
-            std::cout << "Задача 3 " << std::endl;
+            std::cout << "Задача 3 Реализовать симуляцию игры «Рыбалка»." << std::endl;
             task3();
             _getch();
             system("cls");;
         } else if (task == 4)
         {
             system("cls");
-            std::cout << "Задача 4 " << std::endl;
+            std::cout << "Задача 4 Реализовать симуляцию работы банкомата." << std::endl;
             task4();
             _getch();
             system("cls");;
-        } else if (task == 5)
-        {
-            system("cls");
-            std::cout << "Задача 5 " << std::endl;
-            task5();
-            _getch();
-            system("cls");;
-        } else
+        }  else
         {
             system("cls");
             std::cout << "некорректный ввод. Выход из программы";
@@ -80,3 +72,5 @@ int main()
         }
     }
 }
+
+//начинал делать в Clion, но там ещё не разобрался с кодировкой и очень нужным компонентом как debug, потому сдаю в visual studio

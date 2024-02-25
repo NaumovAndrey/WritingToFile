@@ -52,9 +52,46 @@ void array()
 	file.close();
 }
 
+void writeFile() //запись бинарного файла int
+{
+	int number;
+	std::cin >> number;
+
+	std::ofstream filebinary("fileBinary.bin", std::ios::binary);
+	filebinary.write((char*) &number, sizeof(number));
+	filebinary.close();
+ }
+
+void readFile(std::string &file) //чтение бинарного файла int
+{
+	int number;
+	std::ifstream filebinary(file, std::ios::binary);
+	filebinary.read((char*) &number, sizeof(number));
+	filebinary.close();
+
+	std::cout << number << std::endl;
+}
+
+void writeFileString() //запись бинарного файла string
+{
+	const char* title = "GeekBrains";
+
+	std::ofstream filebinary("title.bin", std::ios::binary);
+	filebinary.write(title, std::strlen(title)); //длина нультерминированно си строки, сколько в ней чаров
+	filebinary << std::endl << 23;
+	filebinary.close();
+	std::cout << "запись завершена";
+}
+
 void lesson()
 {
 	//sign();
 	//writingBool();
-	array();
+	//array();
+
+	//writeFile(); //запись бинарного файла
+
+	//std::string binaryfile = "fileBinary.bin";
+	//readFile(binaryfile); //чтение бинарного файла
+	//writeFileString();
 }

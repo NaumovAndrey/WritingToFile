@@ -33,11 +33,20 @@
     <ClCompile Include="task4.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="task5.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <Text Include="..\writeFile\readme.txt" />
+    <Text Include="river.txt" />
     <Text Include="file.txt" />
+    <Text Include="pic.txt" />
+    <Text Include="basket.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="fileBinary.bin">
+      <Filter>Файлы ресурсов</Filter>
+    </None>
+    <None Include="title.bin">
+      <Filter>Файлы ресурсов</Filter>
+    </None>
   </ItemGroup>
 </Project>

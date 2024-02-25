@@ -133,11 +133,18 @@
     <ClCompile Include="task2.cpp" />
     <ClCompile Include="task3.cpp" />
     <ClCompile Include="task4.cpp" />
-    <ClCompile Include="task5.cpp" />
     <ClCompile Include="WritingToFile.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="..\writeFile\readme.txt" />
+    <Text Include="basket.txt" />
     <Text Include="file.txt" />
+    <Text Include="pic.txt" />
+    <Text Include="river.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="fileBinary.bin" />
+    <None Include="title.bin" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
