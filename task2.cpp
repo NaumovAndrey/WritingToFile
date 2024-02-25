@@ -32,7 +32,7 @@ void writeToFile(const std::vector<std::vector<bool>>& v)
 void picture(const int& x, const int& y)
 {
     std::vector<std::vector<bool>> line;
-    std::srand(static_cast<unsigned int>(std::time(nullptr)));
+    std::srand(static_cast<unsigned int>(std::time(nullptr))); //рандом
 
     for (int j = 0; j < y; ++j)
     {
