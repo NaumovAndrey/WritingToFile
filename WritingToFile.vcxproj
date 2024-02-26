@@ -137,6 +137,7 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="..\writeFile\readme.txt" />
+    <Text Include="atmBank.txt" />
     <Text Include="basket.txt" />
     <Text Include="file.txt" />
     <Text Include="pic.txt" />
